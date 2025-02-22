@@ -27,6 +27,8 @@ INNER JOIN enroll ON students.StuID = enroll.StuID
 INNER JOIN faculty ON students.major = faculty.department
 WHERE faculty.facID = 'F110';
 
+
+
 SELECT class.classNumber, students.firstName, students.lastName, students.major
 FROM class
 INNER JOIN faculty ON class.facId = faculty.facID
